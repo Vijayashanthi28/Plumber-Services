@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+       <!-- Contact Header -->
+    <div class="contact-header">
+        Contact Us : +91 9876234567
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><img src="images/navlogo.png"></div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Plumbing <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu plumbing-dropdown">
+                        <div class="dropdown-column">
+                            <div class="column-header">Services</div>
+                            <a href="service.html" class="column-item">PLUMBING</a>
+                            <a href="service.html" class="column-item">EMERGENCY PLUMBING</a>
+                            <a href="service.html" class="column-item">WATER HEATER</a>
+                            <a href="service.html" class="column-item">PIPES</a>
+                            <a href="service.html" class="column-item">LEAKS</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="column-header">Fixtures</div>
+                            <a href="service.html" class="column-item">GARBAGE DISPOSAL</a>
+                            <a href="service.html" class="column-item">TOILETS</a>
+                            <a href="service.html" class="column-item">SHOWERS & BATHTUB</a>
+                            <a href="service.html" class="column-item">SNIKS</a>
+                            <a href="service.html" class="column-item">FAUCETS</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="column-header">Appliances</div>
+                            <a href="service.html" class="column-item">DISHWASHER</a>
+                            <a href="service.html" class="column-item">WASHING MACHINE</a>
+                            <a href="service.html" class="column-item">SUMP PUMPS</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Drains <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">DRAIN CLEANING</a>
+                        <a href="#" class="dropdown-item">SEWER LINE</a>
+                        <a href="#" class="dropdown-item">CAMERA INSPECTION</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Commercial <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">BACKFLOW PREVENTION</a>
+                        <a href="#" class="dropdown-item">GREASE TRAPS</a>
+                        <a href="#" class="dropdown-item">EXCAVATION</a>
+                        <a href="#" class="dropdown-item">HYDRO SETTING</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Water Quality</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Water Damage</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Login / Signup</a>
+                </li>
+            </ul>
+            
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+     <div class="booking-main-container">
+        <div class="booking-form-wrapper">
+            <div class="booking-header-section">
+                <h1 class="booking-main-title">Schedule Service Online</h1>
+                <p class="booking-subtitle-text">Free estimate & no extra charge for appointments on nights, weekends or holidays</p>
+            </div>
+
+            <div class="form-content-container">
+                <div class="step-progress-indicator">
+                    <div class="progress-step-dot dot-active" data-step="1"></div>
+                    <div class="progress-step-dot" data-step="2"></div>
+                    <div class="progress-step-dot" data-step="3"></div>
+                    <div class="progress-step-dot" data-step="4"></div>
+                </div>
+
+                <div class="form-steps-container">
+                    <!-- Step 1: Full Name -->
+                    <div class="form-step-wrapper step-active" data-step="1">
+                        <div class="input-field-group">
+                            <label class="field-label-text">Let's start with your Full Name</label>
+                            <input type="text" class="text-input-field" id="customer-full-name" placeholder="">
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Contact Information -->
+                    <div class="form-step-wrapper" data-step="2">
+                        <div class="input-field-group">
+                            <label class="field-label-text">Thanks! What's the best email for reaching you?</label>
+                            <div class="email-input-container">
+                                <span class="input-icon-email"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" class="text-input-field has-icon" id="customer-email-address" placeholder="">
+                            </div>
+                        </div>
+                        
+                        <div class="input-field-group">
+                            <label class="field-label-text">What's the best Mobile number for reaching you?</label>
+                            <div class="phone-input-container">
+                                <span class="input-icon-phone"><i class="fa-solid fa-phone"></i></span>
+                                <input type="tel" class="text-input-field has-icon" id="customer-phone-number" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Service Location -->
+                    <div class="form-step-wrapper" data-step="3">
+                        <div class="input-field-group">
+                            <label class="field-label-text">Where do you need service?</label>
+                            <input type="text" class="text-input-field" id="service-street-address" placeholder="Address">
+                            
+                            <div class="address-row">
+                                <div class="address-field">
+                                    <input type="text" class="text-input-field" id="service-city-name" placeholder="City">
+                                </div>
+                                <div class="address-field">
+                                    <input type="text" class="text-input-field" id="service-state-name" placeholder="State">
+                                </div>
+                                <div class="pincode-field">
+                                    <input type="text" class="text-input-field" id="service-zip-code" placeholder="Pincode">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Date, Time & Problem -->
+                    <div class="form-step-wrapper" data-step="4">
+                        <div class="input-field-group">
+                            <label class="field-label-text">Please Select your Preferred Service Date And Time</label>
+                            <div class="datetime-input-group">
+                                <div>
+                                    <label class="field-label-text">DATE</label>
+                                    <input type="date" class="text-input-field" id="preferred-service-date">
+                                </div>
+                                <div>
+                                    <label class="field-label-text">TIME</label>
+                                    <input type="time" class="text-input-field" id="preferred-service-time">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-field-group">
+                            <textarea class="textarea-input-field" id="problem-description-text" placeholder="TELL ABOUT PROBLEM"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emergency-contact-info">
+                    <div class="emergency-icon-alert"></div>
+                    <span class="emergency-contact-text">FOR EMERGENCY CONTACT US: 9876234567</span>
+                </div>
+
+                <div class="form-navigation-controls">
+                    <button type="button" class="nav-button-back" id="back-step-button" disabled>BACK</button>
+                    <div>
+                        <button type="button" class="nav-button-next" id="next-step-button">NEXT</button>
+                       <a href="confirmation.html"> <button type="button" class="nav-button-submit" id="submit-form-button">SUBMIT</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+                <div class="musical-note-1">♪</div>
+                <div class="brand-text-1">AND AWAY GO TROUBLES</div>
+                <div class="brand-text-2">DOWN THE DRAIN</div>
+                <div class="musical-note-2">♪</div>
+                
+                <div class="drain-icon">
+                   <img src="images/footer.jpg">
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="column-header">COMPANY</h4>
+                    <a href="#" class="footer-link" onclick="navigate('about')">ABOUT US</a>
+                    <a href="#" class="footer-link" onclick="navigate('investor')">INVESTOR RELATIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('terms')">TERMS & CONDITIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('privacy')">PRIVACY POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('discrimination')">ANTI-DISCRIMINATION POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('esg')">ESG IMPACT</a>
+                    <a href="#" class="footer-link" onclick="navigate('careers')">CAREERS</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR CUSTOMERS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('reviews')">UC REVIEWS</a>
+                    <a href="#" class="footer-link" onclick="navigate('categories')">CATEGORIES NEAR YOU</a>
+                    <a href="#" class="footer-link" onclick="navigate('contact')">CONTACT US</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR PROFESSIONALS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('register')">REGISTER AS A PROFESSIONAL</a>
+                    <a href="#" class="footer-link" onclick="navigate('company')">COMPANY</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">SOCIAL LINKS</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" onclick="openSocial('twitter')" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('facebook')" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('instagram')" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('linkedin')" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    
+                    <div class="app-downloads" style="margin-top: 20px;">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" class="app-badge" onclick="downloadApp('ios')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="app-badge" onclick="downloadApp('android')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+           class ServiceBookingManager {
+            constructor() {
+                this.currentStepIndex = 1;
+                this.totalStepsCount = 4;
+                this.formDataStorage = {};
+                this.isTransitioning = false;
+                
+                this.initializeEventHandlers();
+                this.updateNavigationState();
+                this.validateCurrentStep();
+            }
+
+            initializeEventHandlers() {
+                const nextButton = document.getElementById('next-step-button');
+                const backButton = document.getElementById('back-step-button');
+                const submitButton = document.getElementById('submit-form-button');
+
+                if (nextButton) {
+                    nextButton.addEventListener('click', () => this.proceedToNextStep());
+                }
+                if (backButton) {
+                    backButton.addEventListener('click', () => this.returnToPreviousStep());
+                }
+                if (submitButton) {
+                    submitButton.addEventListener('click', () => this.handleFormSubmission());
+                }
+
+                this.addInputValidationListeners();
+            }
+
+            addInputValidationListeners() {
+                const allInputFields = document.querySelectorAll('.text-input-field, .textarea-input-field');
+                allInputFields.forEach(field => {
+                    field.addEventListener('input', () => this.validateCurrentStep());
+                    field.addEventListener('blur', () => this.saveFieldData(field));
+                });
+            }
+
+            saveFieldData(fieldElement) {
+                this.formDataStorage[fieldElement.id] = fieldElement.value;
+            }
+
+            validateCurrentStep() {
+                let isStepValid = true;
+                
+                if (this.currentStepIndex === 1) {
+                    const fullName = document.getElementById('customer-full-name');
+                    isStepValid = fullName && fullName.value.trim().length > 0;
+                } else if (this.currentStepIndex === 2) {
+                    const email = document.getElementById('customer-email-address');
+                    const phone = document.getElementById('customer-phone-number');
+                    isStepValid = email && email.value.trim().length > 0 && 
+                                 phone && phone.value.trim().length > 0;
+                } else if (this.currentStepIndex === 3) {
+                    const address = document.getElementById('service-street-address');
+                    const city = document.getElementById('service-city-name');
+                    isStepValid = address && address.value.trim().length > 0 && 
+                                 city && city.value.trim().length > 0;
+                } else if (this.currentStepIndex === 4) {
+                    const date = document.getElementById('preferred-service-date');
+                    isStepValid = date && date.value.trim().length > 0;
+                }
+
+                const nextButton = document.getElementById('next-step-button');
+                const submitButton = document.getElementById('submit-form-button');
+                
+                if (this.currentStepIndex < this.totalStepsCount) {
+                    if (nextButton) nextButton.disabled = !isStepValid;
+                } else {
+                    if (submitButton) submitButton.disabled = !isStepValid;
+                }
+
+                return isStepValid;
+            }
+
+            proceedToNextStep() {
+                if (this.isTransitioning || this.currentStepIndex >= this.totalStepsCount) {
+                    return;
+                }
+                
+                if (this.validateCurrentStep()) {
+                    this.transitionToStep(this.currentStepIndex + 1);
+                }
+            }
+
+            returnToPreviousStep() {
+                if (this.isTransitioning || this.currentStepIndex <= 1) {
+                    return;
+                }
+                
+                this.transitionToStep(this.currentStepIndex - 1);
+            }
+
+            transitionToStep(targetStepNumber) {
+                if (this.isTransitioning) {
+                    return;
+                }
+                
+                if (targetStepNumber < 1 || targetStepNumber > this.totalStepsCount) {
+                    return;
+                }
+                
+                this.isTransitioning = true;
+                
+                const currentStepElement = document.querySelector(`.form-step-wrapper[data-step="${this.currentStepIndex}"]`);
+                const targetStepElement = document.querySelector(`.form-step-wrapper[data-step="${targetStepNumber}"]`);
+                
+                if (!targetStepElement) {
+                    this.isTransitioning = false;
+                    return;
+                }
+
+                if (currentStepElement) {
+                    currentStepElement.classList.add('step-exit');
+                    currentStepElement.classList.remove('step-active');
+                }
+
+                setTimeout(() => {
+                    document.querySelectorAll('.form-step-wrapper').forEach(step => {
+                        step.classList.remove('step-active', 'step-exit');
+                    });
+                    
+                    targetStepElement.classList.add('step-active');
+                    
+                    this.currentStepIndex = targetStepNumber;
+                    
+                    this.updateProgressIndicators();
+                    this.updateNavigationState();
+                    this.validateCurrentStep();
+                    
+                    const firstInput = targetStepElement.querySelector('.text-input-field, .textarea-input-field');
+                    if (firstInput) {
+                        firstInput.focus();
+                    }
+                    
+                    this.isTransitioning = false;
+                }, 300);
+            }
+
+            updateProgressIndicators() {
+                const progressDots = document.querySelectorAll('.progress-step-dot');
+                progressDots.forEach((dot, index) => {
+                    const dotStep = index + 1;
+                    dot.classList.remove('dot-active', 'dot-completed');
+                    
+                    if (dotStep < this.currentStepIndex) {
+                        dot.classList.add('dot-completed');
+                    } else if (dotStep === this.currentStepIndex) {
+                        dot.classList.add('dot-active');
+                    }
+                });
+            }
+
+            updateNavigationState() {
+                const backButton = document.getElementById('back-step-button');
+                const nextButton = document.getElementById('next-step-button');
+                const submitButton = document.getElementById('submit-form-button');
+
+                if (backButton) {
+                    backButton.disabled = this.currentStepIndex === 1;
+                }
+
+                if (this.currentStepIndex === this.totalStepsCount) {
+                    if (nextButton) nextButton.style.display = 'none';
+                    if (submitButton) submitButton.style.display = 'inline-block';
+                } else {
+                    if (nextButton) nextButton.style.display = 'inline-block';
+                    if (submitButton) submitButton.style.display = 'none';
+                }
+            }
+
+            collectAllFormData() {
+                const formData = {
+                    fullName: document.getElementById('customer-full-name')?.value || '',
+                    email: document.getElementById('customer-email-address')?.value || '',
+                    phone: document.getElementById('customer-phone-number')?.value || '',
+                    address: document.getElementById('service-street-address')?.value || '',
+                    city: document.getElementById('service-city-name')?.value || '',
+                    state: document.getElementById('service-state-name')?.value || '',
+                    zipCode: document.getElementById('service-zip-code')?.value || '',
+                    serviceDate: document.getElementById('preferred-service-date')?.value || '',
+                    serviceTime: document.getElementById('preferred-service-time')?.value || '',
+                    problemDescription: document.getElementById('problem-description-text')?.value || ''
+                };
+                return formData;
+            }
+
+            handleFormSubmission() {
+                if (!this.validateCurrentStep()) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+
+                const formData = this.collectAllFormData();
+                
+                const requiredFields = ['fullName', 'email', 'phone', 'address', 'city', 'serviceDate'];
+                const missingFields = requiredFields.filter(field => !formData[field] || formData[field].trim() === '');
+                
+                if (missingFields.length > 0) {
+                    alert('Please complete all previous steps before submitting.');
+                    return;
+                }
+
+                alert('Service request submitted successfully! We will contact you soon.');
+                console.log('Form submitted with data:', formData);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            window.bookingManager = new ServiceBookingManager();
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

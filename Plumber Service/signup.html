@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="confirmation-wrapper">
+        <!-- Header -->
+        <div class="service-header">
+            <div class="conheader-content">
+                <div class="water-drop-logo"><img src="images/navlogo.png"></div>
+                <div class="conservice-title">PLUMBER SERVICES</div>
+            </div>
+        </div>
+     <div class="auth-container">
+        <!-- Header strip -->
+        <div class="header-strip"></div>
+
+        <!-- Floating decorative elements -->
+        <div class="floating-element large-circle element-1"></div>
+        <div class="floating-element medium-circle element-2"></div>
+        <div class="floating-element large-circle element-3"></div>
+        <div class="floating-element medium-circle element-4"></div>
+        <div class="floating-element small-star element-5"></div>
+        <div class="floating-element small-star element-6"></div>
+        <div class="floating-element small-star element-7"></div>
+        <div class="floating-element small-star element-8"></div>
+        <div class="floating-element small-star element-9"></div>
+        <div class="floating-element small-star element-10"></div>
+
+        <!-- Auth Card -->
+        <div class="auth-card">
+            <!-- Sign Up Form -->
+            <div class="form-section active" id="signUpForm">
+                <h2 class="form-title">SIGN UP</h2>
+                
+                <div class="input-group">
+                    <label class="input-label">NAME</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-input input-with-icon" id="signupName" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">EMAIL ID</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-input input-with-icon" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">PASSWORD</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-input input-with-icon" id="signupPassword" placeholder="Create a password" required>
+                    </div>
+                </div>
+
+                <button class="submit-button" onclick="handleSignUp()">SIGN UP</button>
+
+                <div class="toggle-form">
+                    <a href="#" class="toggle-link" onclick="toggleForm('signIn')">Already having account ? Sign In</a>
+                </div>
+            </div>
+
+            <!-- Sign In Form -->
+            <div class="form-section" id="signInForm">
+                <h2 class="form-title">SIGN IN</h2>
+                
+                <div class="input-group">
+                    <label class="input-label">EMAIL ID</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-input input-with-icon" id="signinEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">PASSWORD</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-input input-with-icon" id="signinPassword" placeholder="Enter your password" required>
+                    </div>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link" onclick="showForgotPasswordAlert()">Forget Password ?</a>
+                </div>
+
+               <a href="index.html"><button class="submit-button" onclick="handleSignIn()">LOGIN</button></a> 
+
+                <div class="toggle-form">
+                    <a href="#" class="toggle-link" onclick="toggleForm('signUp')">Don't having account ? Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="alert-overlay" id="alertModal">
+        <div class="alert-modal">
+            <div class="alert-icon" id="alertIcon">
+                <span id="alertIconText">✓</span>
+            </div>
+            <div class="alert-title" id="alertTitle">Success!</div>
+            <div class="alert-message" id="alertMessage">Your message here</div>
+            <button class="alert-button" onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

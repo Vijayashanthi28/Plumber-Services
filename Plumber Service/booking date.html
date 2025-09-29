@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="confirmation-wrapper">
+        <!-- Header -->
+        <div class="service-header">
+            <div class="conheader-content">
+                <div class="water-drop-logo"><img src="images/navlogo.png"></div>
+                <div class="conservice-title">Checkout</div>
+            </div>
+        </div>
+    <div class="cart-main-container">
+        <!-- Left Section: Booking Details -->
+        <div class="booking-details-section">
+            <!-- Contact Information -->
+            <div class="contact-info-wrapper">
+                <div class="location-icon-marker"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="booking-info-text">
+                    <div class="booking-info-title">Sending Booking Details To</div>
+                    <div class="booking-info-value">+919876534526</div>
+                </div>
+            </div>
+
+            <!-- Address Information -->
+            <div class="address-info-container">
+                <div class="address-details-wrapper">
+                    <div class="location-icon-marker"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="address-text-content">
+                        <div class="address-label-text">Address</div>
+                        <div class="address-full-text">HOME 12,RTG STREET,MHYFDFFFG,TRHIY</div>
+                    </div>
+                </div>
+                <button class="edit-address-button">Edit</button>
+            </div>
+
+            <!-- Time Slot Section -->
+            <div class="time-slot-section">
+                <div class="slot-info-wrapper">
+                    <div class="time-slot-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="slot-label-text">Slot</div>
+                </div>
+                <button class="date-time-selection-button" id="dateTimeButton">
+                    Select Date and Time
+                </button>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="payment-section-wrapper">
+                <div class="payment-info-header">
+                    <div class="payment-card-icon"><i class="fa-solid fa-money-bill"></i></div>
+                    <div class="payment-label-text">Payment</div>
+                </div>
+               <a href="payment.html"> <button class="proceed-payment-button">Proceed to Pay</button></a>
+                <div class="terms-agreement-text">
+                    By Proceeding, You Agree To Our T & C And Cancellation Policy
+                </div>
+            </div>
+
+            <!-- Cancellation Policy -->
+            <div class="cancellation-policy-section">
+                <h3 class="policy-title-heading">Cancellation Policy</h3>
+                <p class="policy-description-text">
+                    Free Cancellations If Done More Than 12 Hrs Before The Service Or If A Professional Isn't Assigned. A Fee Will Be Charged Otherwise.
+                </p>
+                <span class="read-more-policy-link">Read Fully</span>
+            </div>
+
+            <!-- Offers Section -->
+            <div class="offers-promotion-section">
+                <div class="offers-header-wrapper">
+                    <div class="discount-badge-icon">%</div>
+                    <span class="main-offer-text">SAVE 10 % OFFER ON FIRST ORDER</span>
+                    <span class="view-offers-toggle" id="viewOffersButton">View More Offers ↓</span>
+                </div>
+                
+                <div class="additional-offers-list" id="additionalOffersList">
+                    <div class="offer-item-wrapper">
+                        <div class="offer-check-icon">✓</div>
+                        <span class="offer-description-text">GET VISITATION FEES OFF</span>
+                    </div>
+                    <div class="offer-item-wrapper">
+                        <div class="offer-check-icon">✓</div>
+                        <span class="offer-description-text">GET 10 % OFF</span>
+                    </div>
+                    <div class="offer-item-wrapper">
+                        <div class="offer-check-icon">✓</div>
+                        <span class="offer-description-text">UP TO 150 RS CASH BACK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Cart Summary -->
+        <div class="cart-summary-section">
+            <!-- Service Item -->
+            <div class="service-item-header">
+                <span class="service-name-text">Tap And Filter Installation</span>
+                <span class="service-price-amount">₹299</span>
+            </div>
+
+            <!-- Suggested Services -->
+            <div class="suggested-services-wrapper">
+                <div class="suggested-title-text">frequently added together</div>
+                <div class="suggested-service-item">
+                    <div class="service-thumbnail-image"><img src="images/shower.jpg"></div>
+                    <div class="service-info-content">
+                        <div class="service-item-name">Shower filter installation</div>
+                        <div class="service-item-price">₹199</div>
+                    </div>
+                    <button class="add-service-button">Add</button>
+                </div>
+            </div>
+
+            <!-- Location Preference -->
+            <div class="location-preference-wrapper">
+                <div class="preference-checkbox"></div>
+                <span class="preference-label-text">avoid calling before reaching location</span>
+            </div>
+
+            <!-- Coupons Section -->
+            <div class="coupon-section-wrapper">
+                <div class="coupon-icon-tag"></div>
+                <div class="coupon-text-label">Coupons and offers</div>
+            </div>
+
+            <!-- Payment Summary -->
+            <div class="payment-breakdown-section">
+                <h3 class="summary-title-heading">Payment Summary</h3>
+                <div class="payment-line-item">
+                    <span class="line-item-label">Item Total</span>
+                    <span class="line-item-amount">₹299</span>
+                </div>
+                <div class="payment-line-item">
+                    <span class="line-item-label">Visitation Fee</span>
+                    <span class="line-item-amount">₹60</span>
+                </div>
+                <div class="payment-line-item">
+                    <span class="line-item-label">Tax And Fee</span>
+                    <span class="line-item-amount">₹20</span>
+                </div>
+                <div class="payment-line-item total-amount-row">
+                    <span class="line-item-label">Total Amount</span>
+                    <span class="line-item-amount">₹379</span>
+                </div>
+            </div>
+
+            <!-- Final Amount -->
+            <div class="final-payment-section">
+                <div class="final-amount-display">
+                    <span class="final-amount-label">Amount To Pay</span>
+                    <span class="final-amount-value">₹379</span>
+                </div>
+                <div class="breakdown-link-text">view breakup</div>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-section-wrapper">
+                <div class="tip-title-text">Add A Tip To Thank The Professional</div>
+                <div class="tip-options-container">
+                    <button class="tip-amount-button" data-tip="50">Rs 50</button>
+                    <button class="tip-amount-button" data-tip="100">Rs 100</button>
+                    <button class="tip-amount-button" data-tip="custom">Custom</button>
+                </div>
+                <div class="tip-info-text">100% Of The Tip Goes To The Professional.</div>
+            </div>
+
+            <!-- Final Amount After Tip -->
+            <div class="final-payment-section">
+                <div class="final-amount-display">
+                    <span class="final-amount-label">Amount To Pay</span>
+                    <span class="final-amount-value" id="finalAmountDisplay">₹379</span>
+                </div>
+                <div class="breakdown-link-text">view breakup</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Date & Time Selection Modal -->
+    <div class="date-booking-modal" id="dateBookingModal">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-button" id="modalCloseButton">×</button>
+            
+            <div class="bmodal-header-section">
+                <h2 class="modal-title-text">WHEN SHOULD OUR PROFESSIONAL ARRIVE ?</h2>
+                <p class="service-duration-text">Service Will Take Approx. 45 Mins</p>
+            </div>
+
+            <div class="date-selection-grid">
+                <button class="date-slot-button" data-date="19">
+                    <div class="day-name-text">Thu</div>
+                    <div class="day-number-text">19</div>
+                </button>
+                <button class="date-slot-button" data-date="20">
+                    <div class="day-name-text">Fri</div>
+                    <div class="day-number-text">20</div>
+                </button>
+                <button class="date-slot-button" data-date="21">
+                    <div class="day-name-text">Sat</div>
+                    <div class="day-number-text">21</div>
+                </button>
+            </div>
+
+            <div class="payment-notice-banner">
+                Online Payments Only For Selected Dates
+            </div>
+        </div>
+    </div>
+    </div>
+    
+     <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+                <div class="musical-note-1">♪</div>
+                <div class="brand-text-1">AND AWAY GO TROUBLES</div>
+                <div class="brand-text-2">DOWN THE DRAIN</div>
+                <div class="musical-note-2">♪</div>
+                
+                <div class="drain-icon">
+                   <img src="images/footer.jpg">
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="column-header">COMPANY</h4>
+                    <a href="#" class="footer-link" onclick="navigate('about')">ABOUT US</a>
+                    <a href="#" class="footer-link" onclick="navigate('investor')">INVESTOR RELATIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('terms')">TERMS & CONDITIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('privacy')">PRIVACY POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('discrimination')">ANTI-DISCRIMINATION POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('esg')">ESG IMPACT</a>
+                    <a href="#" class="footer-link" onclick="navigate('careers')">CAREERS</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR CUSTOMERS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('reviews')">UC REVIEWS</a>
+                    <a href="#" class="footer-link" onclick="navigate('categories')">CATEGORIES NEAR YOU</a>
+                    <a href="#" class="footer-link" onclick="navigate('contact')">CONTACT US</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR PROFESSIONALS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('register')">REGISTER AS A PROFESSIONAL</a>
+                    <a href="#" class="footer-link" onclick="navigate('company')">COMPANY</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">SOCIAL LINKS</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" onclick="openSocial('twitter')" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('facebook')" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('instagram')" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('linkedin')" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    
+                    <div class="app-downloads" style="margin-top: 20px;">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" class="app-badge" onclick="downloadApp('ios')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="app-badge" onclick="downloadApp('android')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    //Booking Date slot
+            class CartBookingManager {
+            constructor() {
+                this.baseAmount = 379;
+                this.selectedTip = 0;
+                this.selectedDate = null;
+                this.offersExpanded = false;
+                
+                this.initializeEventHandlers();
+            }
+
+            initializeEventHandlers() {
+                // Date & Time Selection Modal
+                const dateTimeButton = document.getElementById('dateTimeButton');
+                const dateModal = document.getElementById('dateBookingModal');
+                const modalClose = document.getElementById('modalCloseButton');
+                
+                dateTimeButton.addEventListener('click', () => this.openDateModal());
+                modalClose.addEventListener('click', () => this.closeDateModal());
+                dateModal.addEventListener('click', (e) => {
+                    if (e.target === dateModal) this.closeDateModal();
+                });
+
+                // Date Selection
+                const dateButtons = document.querySelectorAll('.date-slot-button');
+                dateButtons.forEach(button => {
+                    button.addEventListener('click', () => this.selectDate(button));
+                });
+
+                // Offers Toggle
+                const viewOffersButton = document.getElementById('viewOffersButton');
+                const additionalOffersList = document.getElementById('additionalOffersList');
+                
+                viewOffersButton.addEventListener('click', () => this.toggleOffers());
+
+                // Tip Selection
+                const tipButtons = document.querySelectorAll('.tip-amount-button');
+                tipButtons.forEach(button => {
+                    button.addEventListener('click', () => this.selectTip(button));
+                });
+
+                // Add Service Button
+                const addServiceButton = document.querySelector('.add-service-button');
+                addServiceButton.addEventListener('click', () => this.addSuggestedService());
+
+                // Preference Checkbox
+                const preferenceCheckbox = document.querySelector('.preference-checkbox');
+                preferenceCheckbox.addEventListener('click', () => this.togglePreference());
+
+                // Edit Address Button
+                const editAddressButton = document.querySelector('.edit-address-button');
+                editAddressButton.addEventListener('click', () => this.editAddress());
+
+                // Proceed to Pay Button
+                const proceedPayButton = document.querySelector('.proceed-payment-button');
+                proceedPayButton.addEventListener('click', () => this.proceedToPayment());
+
+                // Coupon Section
+                const couponSection = document.querySelector('.coupon-section-wrapper');
+                couponSection.addEventListener('click', () => this.openCoupons());
+            }
+
+            openDateModal() {
+                const modal = document.getElementById('dateBookingModal');
+                modal.classList.add('modal-visible');
+                document.body.style.overflow = 'hidden';
+            }
+
+            closeDateModal() {
+                const modal = document.getElementById('dateBookingModal');
+                modal.classList.remove('modal-visible');
+                document.body.style.overflow = 'auto';
+            }
+
+            selectDate(selectedButton) {
+                // Remove previous selection
+                document.querySelectorAll('.date-slot-button').forEach(btn => {
+                    btn.classList.remove('date-selected');
+                });
+
+                // Add selection to clicked button
+                selectedButton.classList.add('date-selected');
+                
+                const dateValue = selectedButton.getAttribute('data-date');
+                const dayName = selectedButton.querySelector('.day-name-text').textContent;
+                
+                this.selectedDate = {
+                    date: dateValue,
+                    day: dayName
+                };
+
+                // Update the main button text
+                const dateTimeButton = document.getElementById('dateTimeButton');
+                dateTimeButton.textContent = `${dayName}, ${dateValue} - Select Time`;
+                dateTimeButton.style.background = '#10b981';
+
+                // Auto-close modal after selection
+                setTimeout(() => {
+                    this.closeDateModal();
+                }, 1000);
+            }
+
+            toggleOffers() {
+                const offersButton = document.getElementById('viewOffersButton');
+                const offersList = document.getElementById('additionalOffersList');
+                
+                this.offersExpanded = !this.offersExpanded;
+                
+                if (this.offersExpanded) {
+                    offersList.classList.add('offers-expanded');
+                    offersButton.textContent = 'View Less Offers ↑';
+                } else {
+                    offersList.classList.remove('offers-expanded');
+                    offersButton.textContent = 'View More Offers ↓';
+                }
+            }
+
+            selectTip(selectedButton) {
+                // Remove previous selection
+                document.querySelectorAll('.tip-amount-button').forEach(btn => {
+                    btn.classList.remove('tip-selected');
+                });
+
+                // Add selection to clicked button
+                selectedButton.classList.add('tip-selected');
+                
+                const tipValue = selectedButton.getAttribute('data-tip');
+                
+                if (tipValue === 'custom') {
+                    const customTip = prompt('Enter custom tip amount (Rs):');
+                    if (customTip && !isNaN(customTip) && customTip > 0) {
+                        this.selectedTip = parseInt(customTip);
+                        selectedButton.textContent = `Rs ${customTip}`;
+                    } else {
+                        selectedButton.classList.remove('tip-selected');
+                        return;
+                    }
+                } else {
+                    this.selectedTip = parseInt(tipValue);
+                }
+
+                this.updateFinalAmount();
+            }
+
+            updateFinalAmount() {
+                const finalAmount = this.baseAmount + this.selectedTip;
+                const finalAmountDisplay = document.getElementById('finalAmountDisplay');
+                finalAmountDisplay.textContent = `₹${finalAmount}`;
+            }
+
+            addSuggestedService() {
+                const addButton = document.querySelector('.add-service-button');
+                const serviceItem = addButton.closest('.suggested-service-item');
+                
+                // Change button state
+                addButton.textContent = 'Added ✓';
+                addButton.style.background = '#10b981';
+                addButton.style.color = 'white';
+                addButton.style.borderColor = '#10b981';
+                addButton.disabled = true;
+
+                // Update cart totals (assuming shower filter is ₹199)
+                this.baseAmount += 199;
+                
+                // Update item total in payment summary
+                const itemTotalElement = document.querySelector('.payment-line-item .line-item-amount');
+                itemTotalElement.textContent = `₹${this.baseAmount - 80}`; // Minus fees
+                
+                // Update total amount
+                const totalAmountElement = document.querySelector('.total-amount-row .line-item-amount');
+                totalAmountElement.textContent = `₹${this.baseAmount}`;
+                
+                this.updateFinalAmount();
+
+                // Show success feedback
+                this.showNotification('Service added to cart!', 'success');
+            }
+
+            togglePreference() {
+                const checkbox = document.querySelector('.preference-checkbox');
+                const isChecked = checkbox.classList.contains('checked');
+                
+                if (isChecked) {
+                    checkbox.classList.remove('checked');
+                    checkbox.style.background = 'transparent';
+                    checkbox.innerHTML = '';
+                } else {
+                    checkbox.classList.add('checked');
+                    checkbox.style.background = '#3b82f6';
+                    checkbox.innerHTML = '<span style="color: white; font-size: 10px;">✓</span>';
+                }
+            }
+
+            editAddress() {
+                const newAddress = prompt('Enter new address:', 'HOME 12,RTG STREET,MHYFDFFFG,TRHIY');
+                if (newAddress && newAddress.trim()) {
+                    const addressText = document.querySelector('.address-full-text');
+                    addressText.textContent = newAddress;
+                    this.showNotification('Address updated successfully!', 'success');
+                }
+            }
+
+            proceedToPayment() {
+                if (!this.selectedDate) {
+                    this.showNotification('Please select a date and time first!', 'error');
+                    return;
+                }
+
+                // Show loading state
+                const payButton = document.querySelector('.proceed-payment-button');
+                const originalText = payButton.textContent;
+                payButton.textContent = 'Processing...';
+                payButton.disabled = true;
+
+                // Simulate payment processing
+                setTimeout(() => {
+                    payButton.textContent = originalText;
+                    payButton.disabled = false;
+                    this.showNotification('Redirecting to payment gateway...', 'info');
+                }, 2000);
+            }
+
+            openCoupons() {
+                const availableCoupons = [
+                    { code: 'FIRST10', discount: '10% off', description: 'First order discount' },
+                    { code: 'SAVE50', discount: '₹50 off', description: 'Minimum order ₹300' },
+                    { code: 'WEEKEND20', discount: '20% off', description: 'Weekend special' }
+                ];
+
+                let couponHTML = 'Available Coupons:\n\n';
+                availableCoupons.forEach(coupon => {
+                    couponHTML += `${coupon.code} - ${coupon.discount}\n${coupon.description}\n\n`;
+                });
+
+                alert(couponHTML);
+            }
+
+            showNotification(message, type = 'info') {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
+                    color: white;
+                    padding: 15px 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                    z-index: 10000;
+                    font-size: 14px;
+                    font-weight: 500;
+                    max-width: 300px;
+                    animation: slideInRight 0.3s ease-out;
+                `;
+                
+                notification.textContent = message;
+                document.body.appendChild(notification);
+
+                // Add animation keyframes
+                if (!document.querySelector('#notificationStyles')) {
+                    const style = document.createElement('style');
+                    style.id = 'notificationStyles';
+                    style.textContent = `
+                        @keyframes slideInRight {
+                            from { transform: translateX(100%); opacity: 0; }
+                            to { transform: translateX(0); opacity: 1; }
+                        }
+                        @keyframes slideOutRight {
+                            from { transform: translateX(0); opacity: 1; }
+                            to { transform: translateX(100%); opacity: 0; }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    notification.style.animation = 'slideOutRight 0.3s ease-in forwards';
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            notification.parentNode.removeChild(notification);
+                        }
+                    }, 300);
+                }, 3000);
+            }
+
+            // Initialize cart data
+            initializeCartData() {
+                const cartData = {
+                    services: [
+                        { name: 'Tap And Filter Installation', price: 299 }
+                    ],
+                    fees: {
+                        visitation: 60,
+                        tax: 20
+                    },
+                    selectedDate: null,
+                    selectedTip: 0,
+                    preferences: {
+                        avoidCalling: false
+                    }
+                };
+
+                return cartData;
+            }
+
+            // Get complete booking summary
+            getBookingSummary() {
+                return {
+                    contact: '+919876534526',
+                    address: document.querySelector('.address-full-text').textContent,
+                    selectedDate: this.selectedDate,
+                    services: document.querySelectorAll('.service-item-header').length,
+                    totalAmount: this.baseAmount + this.selectedTip,
+                    tip: this.selectedTip,
+                    preferences: {
+                        avoidCalling: document.querySelector('.preference-checkbox').classList.contains('checked')
+                    }
+                };
+            }
+        }
+
+        // Initialize the cart manager when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new CartBookingManager();
+        });
+
+        // Handle escape key for modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('dateBookingModal');
+                if (modal.classList.contains('modal-visible')) {
+                    modal.classList.remove('modal-visible');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

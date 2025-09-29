@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="confirmation-wrapper">
+        <!-- Header -->
+        <div class="service-header">
+            <div class="conheader-content">
+                <div class="water-drop-logo"><img src="images/navlogo.png"></div>
+                <div class="conservice-title"></div>
+            </div>
+        </div>
+     <div class="payment-container">
+        <!-- Decorative shapes -->
+        <div class="shape-decoration shape-top-left"></div>
+        <div class="shape-decoration shape-top-right"></div>
+        <div class="shape-decoration shape-bottom-left"></div>
+        <div class="shape-decoration shape-bottom-right"></div>
+        
+        
+        
+        <!-- Payment modal -->
+        <div class="payment-modal">
+            <div class="modal-header">
+                <div class="back-arrow"></div>
+                <div class="header-content">
+                    <div class="payheader-title">SELECT PAYMENT METHOD</div>
+                    <div class="payment-amount">AMOUNT TO PAY : <span class="amount-value">₹379</span></div>
+                </div>
+            </div>
+            
+            <div class="payment-options">
+                <!-- Cards Section -->
+                <div class="option-section">
+                    <div class="section-header">CARDS</div>
+                    <button class="payment-option" onclick="selectPaymentMethod('card')">
+                        <div class="option-icon card-icon"><i class="fa-regular fa-credit-card"></i></div>
+                        <div class="option-text">ADD NEW CARD</div>
+                        <div class="option-arrow">›</div>
+                    </button>
+                </div>
+                
+                <!-- UPI Section -->
+                <div class="option-section">
+                    <div class="section-header">UPI</div>
+                    <button class="payment-option" onclick="selectPaymentMethod('upi')">
+                        <div class="option-icon upi-icon">UPI</div>
+                        <div class="option-text">ADD NEW UPI ID</div>
+                        <div class="option-arrow">›</div>
+                    </button>
+                </div>
+                
+                <!-- Net Banking Section -->
+                <div class="option-section">
+                    <div class="section-header">NET BANKING</div>
+                    <button class="payment-option" onclick="selectPaymentMethod('netbanking')">
+                        <div class="option-icon bank-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <div class="option-text">NET BANKING</div>
+                        <div class="option-arrow">›</div>
+                    </button>
+                </div>
+            </div>
+            
+           <a href="confirmation.html"> <button class="pay-button" onclick="processPayment()">PAY ₹379</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

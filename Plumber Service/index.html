@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+      <!-- Contact Header -->
+    <div class="contact-header">
+        Contact Us : +91 9876234567
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><img src="images/navlogo.png"></div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Plumbing <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu plumbing-dropdown">
+                        <div class="dropdown-column">
+                            <div class="column-header">Services</div>
+                            <a href="service.html" class="column-item">PLUMBING</a>
+                            <a href="service.html" class="column-item">EMERGENCY PLUMBING</a>
+                            <a href="service.html" class="column-item">WATER HEATER</a>
+                            <a href="service.html" class="column-item">PIPES</a>
+                            <a href="service.html" class="column-item">LEAKS</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="column-header">Fixtures</div>
+                            <a href="service.html" class="column-item">GARBAGE DISPOSAL</a>
+                            <a href="service.html" class="column-item">TOILETS</a>
+                            <a href="service.html" class="column-item">SHOWERS & BATHTUB</a>
+                            <a href="service.html" class="column-item">SNIKS</a>
+                            <a href="service.html" class="column-item">FAUCETS</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="column-header">Appliances</div>
+                            <a href="service.html" class="column-item">DISHWASHER</a>
+                            <a href="service.html" class="column-item">WASHING MACHINE</a>
+                            <a href="service.html" class="column-item">SUMP PUMPS</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Drains <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">DRAIN CLEANING</a>
+                        <a href="#" class="dropdown-item">SEWER LINE</a>
+                        <a href="#" class="dropdown-item">CAMERA INSPECTION</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Commercial <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">BACKFLOW PREVENTION</a>
+                        <a href="#" class="dropdown-item">GREASE TRAPS</a>
+                        <a href="#" class="dropdown-item">EXCAVATION</a>
+                        <a href="#" class="dropdown-item">HYDRO SETTING</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Water Quality</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Water Damage</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Login / Signup</a>
+                </li>
+            </ul>
+            
+            
+        </div>
+    </nav>
+
+      <section class="plumbing-hero-section">
+        <div class="hero-content-wrapper">
+            <div class="hero-text-container">
+                <h1 class="main-heading-text">
+                    Fast and Reliable Plumbing Services
+                </h1>
+                <p class="sub-heading-description">
+                    Emergency Plumbing Solutions at Your Finger Tips
+                </p>
+              <a href="schedule.html"> <button class="cta-button-primary">
+                    Request Service Now
+                </button></a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <div class="overview-container">
+            <h2 class="section-heading">OUR SERVICES</h2>
+            
+            <div class="services-cards-grid">
+                <!-- Emergency Plumbing Services -->
+                <div class="service-overview-card">
+                    <div class="service-icon-circle">
+                        <span class="service-icon "><img src="images/i 1.png"></span>
+                    </div>
+                    <h3 class="card-title">Emergency Plumbing Services</h3>
+                    <p class="card-description">
+                        Our plumbers are ready to go 24/7 for Emergencies - including nights, weekends,holidays.
+                    </p>
+                    <a href="plumbing.html" class="explore-service-btn" onclick="exploreService('emergency')">
+                        EXPLORE THIS SERVICES <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Plumbing & Drains -->
+                <div class="service-overview-card">
+                    <div class="service-icon-circle">
+                        <span class="service-icon "><img src="images/i2.png"></span>
+                    </div>
+                    <h3 class="card-title">Plumbing & Drains</h3>
+                    <p class="card-description">
+                        As a largest plumbing and drain service company, We make Thousands of repairs everyday.
+                    </p>
+                    <a href="plumbing.html" class="explore-service-btn" onclick="exploreService('plumbing')">
+                        EXPLORE THIS SERVICES <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Emergency Plumbing Services (Water) -->
+                <div class="service-overview-card">
+                    <div class="service-icon-circle">
+                        <span class="service-icon "><img src="images/i 3.png"></span>
+                    </div>
+                    <h3 class="card-title">Emergency Plumbing Services</h3>
+                    <p class="card-description">
+                        Our teams are equipped with state of the art water extraction and clean up equipment
+                    </p>
+                    <a href="plumbing.html" class="explore-service-btn" onclick="exploreService('water-emergency')">
+                        EXPLORE THIS SERVICES <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative triangular shapes -->
+        <div class="geometric-shape triangle-left"></div>
+        <div class="geometric-shape triangle-right-1"></div>
+        <div class="geometric-shape triangle-right-2"></div>
+    </section>
+
+    <!-- Professional Services Section -->
+    <section class="professional-section">
+        <div class="professional-container">
+            <div class="professional-content">
+                <h2 class="professional-main-title">LEAVE PLUMBING TO THE PROS</h2>
+                <p class="professional-subtitle">
+                    BECAUSE WITH PLUMBING SERVICES, YOU GET MORE THAN A GUARANTEE.
+                </p>
+                
+                <ul class="professional-features">
+                    <li class="feature-item">
+                        <div class="feature-title">REPUTATION</div>
+                        <p class="feature-description">
+                            Highly-trained professionals since 1935. A job done right by the original experts.
+                        </p>
+                    </li>
+                    
+                    <li class="feature-item">
+                        <div class="feature-title">TRANSPARENCY</div>
+                        <p class="feature-description">
+                            Free Onsite Estimates. No Hidden Or Extra Charges For Plumbing Or Drain Service On Holidays, Nights, And Weekends.
+                        </p>
+                    </li>
+                    
+                    <li class="feature-item">
+                        <div class="feature-title">EFFICIENCY</div>
+                        <p class="feature-description">
+                            Same-Day And Emergency Service 365 Days A Year.
+                        </p>
+                    </li>
+                    
+                    <li class="feature-item">
+                        <div class="feature-title">QUALITY</div>
+                        <p class="feature-description">
+                            Full-Service Plumbing, Drain Cleaning, And Water Cleanup – Using State-Of-The-Art Diagnostics And Equipment.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="professional-image">
+                <img src="images/plumb.jpg" alt="Professional Plumber" class="professional-photo">
+            </div>
+        </div>
+         <!-- Large decorative circles -->
+        <div class="large-circle-left"></div>
+        <div class="large-circle-right"></div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-content">
+                <h2 class="faq-title">YOU HAVE QUESTIONS, WE HAVE ANSWERS.</h2>
+                <p class="faq-subtitle">
+                    Read our most frequently asked questions for your plumbing needs, or watch our latest videos
+                </p>
+                <button class="faq-action-btn" onclick="readFAQ()">READ OUR FAQ</button>
+            </div>
+            
+            <div class="technicians-image">
+                <img src="images/faq_technicians_grouped_2023.png" alt="Professional Technicians" class="team-photo">
+            </div>
+        </div>
+
+       
+    </section>
+
+    <!-- Video Learning Section -->
+    <section class="video-learning-section">
+        <div class="video-container">
+            <h2 class="video-heading">WATCH LEARN FIX DOWNLOAD OUR MOBILE APP</h2>
+            
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-item" onclick="playVideo('drain-cleaning')">
+                    <img src="images/vi 1.jpg" alt="Drain Cleaning Video" class="video-thumbnail">
+                    <div class="video-play-overlay">▶</div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-item" onclick="playVideo('pipe-repair')">
+                    <img src="images/index hero.jpg" alt="Pipe Repair Video" class="video-thumbnail">
+                    <div class="video-play-overlay">▶</div>
+                </div>
+            </div>
+            
+            <div class="video-explore-btn">
+                <button class="explore-video-btn" onclick="exploreVideos()">EXPLORE VIDEO</button>
+            </div>
+        </div>
+    </section>
+
+    
+         <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <img src="data:image/jpeg;base64,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" alt="Customer 1" class="customer-avatar">
+                    
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        The technician was polite and took care of a simple water heater problem and Took the time to explain things to me. I am very pleased
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <img src="data:image/jpeg;base64,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" alt="Customer 2" class="customer-avatar">
+                    
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        Louis was very professional and did a fantastic job getting my plumbing working
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <img src="data:image/jpeg;base64,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" alt="Customer 3" class="customer-avatar">
+                    
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        Jason was polite, explained his assessment thoroughly, and definitely went the extra mile to get us set up for a plumber for our next step.
+                    </p>
+                </div>
+            </div>
+
+            <div class="more-testimonials">
+                <a href="#" class="more-link" onclick="showMoreTestimonials()">
+                    MORE FROM OUR CUSTOMERS <span class="arrow-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+                <div class="musical-note-1">♪</div>
+                <div class="brand-text-1">AND AWAY GO TROUBLES</div>
+                <div class="brand-text-2">DOWN THE DRAIN</div>
+                <div class="musical-note-2">♪</div>
+                
+                <div class="drain-icon">
+                   <img src="images/footer.jpg">
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="column-header">COMPANY</h4>
+                    <a href="#" class="footer-link" onclick="navigate('about')">ABOUT US</a>
+                    <a href="#" class="footer-link" onclick="navigate('investor')">INVESTOR RELATIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('terms')">TERMS & CONDITIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('privacy')">PRIVACY POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('discrimination')">ANTI-DISCRIMINATION POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('esg')">ESG IMPACT</a>
+                    <a href="#" class="footer-link" onclick="navigate('careers')">CAREERS</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR CUSTOMERS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('reviews')">UC REVIEWS</a>
+                    <a href="#" class="footer-link" onclick="navigate('categories')">CATEGORIES NEAR YOU</a>
+                    <a href="#" class="footer-link" onclick="navigate('contact')">CONTACT US</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR PROFESSIONALS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('register')">REGISTER AS A PROFESSIONAL</a>
+                    <a href="#" class="footer-link" onclick="navigate('company')">COMPANY</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">SOCIAL LINKS</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" onclick="openSocial('twitter')" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('facebook')" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('instagram')" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('linkedin')" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    
+                    <div class="app-downloads" style="margin-top: 20px;">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" class="app-badge" onclick="downloadApp('ios')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="app-badge" onclick="downloadApp('android')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

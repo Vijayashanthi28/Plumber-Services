@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Services Website</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+       <!-- Contact Header -->
+    <div class="contact-header">
+        Contact Us : +91 9876234567
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><img src="images/navlogo.png"></div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Plumbing <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu plumbing-dropdown">
+                        <div class="dropdown-column">
+                            <div class="column-header">Services</div>
+                            <a href="service.html" class="column-item">PLUMBING</a>
+                            <a href="service.html" class="column-item">EMERGENCY PLUMBING</a>
+                            <a href="service.html" class="column-item">WATER HEATER</a>
+                            <a href="service.html" class="column-item">PIPES</a>
+                            <a href="service.html" class="column-item">LEAKS</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="column-header">Fixtures</div>
+                            <a href="service.html" class="column-item">GARBAGE DISPOSAL</a>
+                            <a href="service.html" class="column-item">TOILETS</a>
+                            <a href="service.html" class="column-item">SHOWERS & BATHTUB</a>
+                            <a href="service.html" class="column-item">SNIKS</a>
+                            <a href="service.html" class="column-item">FAUCETS</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="column-header">Appliances</div>
+                            <a href="service.html" class="column-item">DISHWASHER</a>
+                            <a href="service.html" class="column-item">WASHING MACHINE</a>
+                            <a href="service.html" class="column-item">SUMP PUMPS</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Drains <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">DRAIN CLEANING</a>
+                        <a href="#" class="dropdown-item">SEWER LINE</a>
+                        <a href="#" class="dropdown-item">CAMERA INSPECTION</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(this)">
+                        Commercial <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">BACKFLOW PREVENTION</a>
+                        <a href="#" class="dropdown-item">GREASE TRAPS</a>
+                        <a href="#" class="dropdown-item">EXCAVATION</a>
+                        <a href="#" class="dropdown-item">HYDRO SETTING</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Water Quality</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Water Damage</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Login / Signup</a>
+                </li>
+            </ul>
+            
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+     <div class="page-container">
+        <!-- Breadcrumb Navigation -->
+        <nav class="navigation-breadcrumb">
+            <a href="#" class="breadcrumb-link">Home</a> / <a href="#" class="breadcrumb-link">Plumbing</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="plumbhero-section">
+            <div class="plumbhero-container">
+                <div class="plumbhero-content">
+                    <h1 class="main-heading">Plumbing Services</h1>
+                    <p class="plumbhero-description">
+                        Our familiar jingle says it all – Trust Plumbing Service to solve all your plumbing and drain problems fast. Plumbing Service is India's #1 provider of residential plumbing repair and drain service. Homeowners everywhere had relied on Plumbing Services since 1935 for dependable, professional drainage service.
+                    </p>
+                  <a href="schedule.html"><button class="service-request-btn" onclick="requestService()">REQUEST SERVICE NOW</button></a> 
+                    
+                    <div class="coupon-section">
+                        <div class="dollar-icon">$</div>
+                        <span class="coupon-text">SAVE MONEY USING OUR COUPEN CODE</span>
+                    </div>
+                </div>
+
+                <div class="plumbhero-image">
+                    <img src="images/plumb hero.png" alt="Professional Plumber" class="plumber-photo">
+                    
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="trust-content">
+                    <h2 class="trust-heading">Leave plumbing to the pros</h2>
+                    <p class="trust-description">
+                        You can trust our plumbers and the quality and professionalism of our work. Every plumbing technician strives for professionalism. It's what you expect from a plumbing and drainage company, but many companies fall short. Service takes pride in being a cut-above ordinary plumbers. When you call Service a trained expert will arrive in a van stocked with the necessary equipment and tools to handle any home plumbing problem. You can also expect:
+                    </p>
+                    
+                    <ul class="services-list">
+                        <li class="service-item">Uniformed and badged technicians</li>
+                        <li class="service-item">Clearly marked and branded Service vehicles</li>
+                        <li class="service-item">Expertise in all plumbing & drainage services</li>
+                        <li class="service-item">Fully licensed and insured</li>
+                        <li class="service-item">24/7 emergency service</li>
+                    </ul>
+                </div>
+
+                <div class="trust-image">
+                    <img src="images/plumb.jpg" alt="Professional Plumbing Service" class="professional-photo">
+                </div>
+
+                  <div class="rating-circle">
+                        <div class="star-rating">
+                            <span class="star-icon">★</span>
+                            <span class="star-icon">★</span>
+                            <span class="star-icon">★</span>
+                            <span class="star-icon">★</span>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="rating-title">HIGHLY RATED</div>
+                        <div class="rating-subtitle">BY OUR CUSTOMERS</div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Service Banner -->
+        <div class="service-banner">
+            FREE ESTIMATES & NO TRIP CHARGE, SAME DAY SERVICE
+        </div>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="services-container">
+                <h2 class="section-title">SERVICES</h2>
+                
+                <div class="services-grid">
+                    <!-- Bath Fitting -->
+                    <div class="service-card">
+                     <a href="service.html" style="text-decoration: none;"> <img src="images/pl 1.jpeg" alt="Basin & Sink" class="service-image">
+                        <h3 class="service-name">BATH FITTING</h3></a> 
+                    </div>
+
+                    <!-- Basin & Sink -->
+                    <div class="service-card">
+                        <img src="images/pl 2.webp" alt="Basin & Sink" class="service-image">
+                        <h3 class="service-name">BASIN & SINK</h3>
+                    </div>
+
+                    <!-- Grounting -->
+                    <div class="service-card">
+                        <img src="images/pl 3.jpg" alt="Grounting" class="service-image">
+                        <h3 class="service-name">GROUNTING</h3>
+                    </div>
+
+                    <!-- Water Filter -->
+                    <div class="service-card">
+                        <img src="images/pl 4.webp" alt="Water Filter" class="service-image">
+                        <h3 class="service-name">WATER FILTER</h3>
+                    </div>
+
+                    <!-- Drainage -->
+                    <div class="service-card">
+                        <img src="images/drain.avif" alt="Drainage" class="service-image">
+                        <h3 class="service-name">DRAINAGE</h3>
+                    </div>
+
+                    <!-- Toilet -->
+                    <div class="service-card">
+                        <img src="images/pl 5.jpeg" alt="Toilet" class="service-image">
+                        <h3 class="service-name">TOILET</h3>
+                    </div>
+
+                    <!-- Tap & Mixer -->
+                    <div class="service-card">
+                        <img src="images/pl 6.jpeg" alt="Tap & Mixer" class="service-image">
+                        <h3 class="service-name">TAP & MIXER</h3>
+                    </div>
+
+                    <!-- Tank -->
+                    <div class="service-card">
+                        <img src="images/pl 7.png" alt="Tank" class="service-image">
+                        <h3 class="service-name">TANK</h3>
+                    </div>
+
+                    <!-- Motor -->
+                    <div class="service-card">
+                        <img src="images/pl 9.jpeg" alt="Motor" class="service-image">
+                        <h3 class="service-name">MOTOR</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+     <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+                <div class="musical-note-1">♪</div>
+                <div class="brand-text-1">AND AWAY GO TROUBLES</div>
+                <div class="brand-text-2">DOWN THE DRAIN</div>
+                <div class="musical-note-2">♪</div>
+                
+                <div class="drain-icon">
+                   <img src="images/footer.jpg">
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="column-header">COMPANY</h4>
+                    <a href="#" class="footer-link" onclick="navigate('about')">ABOUT US</a>
+                    <a href="#" class="footer-link" onclick="navigate('investor')">INVESTOR RELATIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('terms')">TERMS & CONDITIONS</a>
+                    <a href="#" class="footer-link" onclick="navigate('privacy')">PRIVACY POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('discrimination')">ANTI-DISCRIMINATION POLICY</a>
+                    <a href="#" class="footer-link" onclick="navigate('esg')">ESG IMPACT</a>
+                    <a href="#" class="footer-link" onclick="navigate('careers')">CAREERS</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR CUSTOMERS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('reviews')">UC REVIEWS</a>
+                    <a href="#" class="footer-link" onclick="navigate('categories')">CATEGORIES NEAR YOU</a>
+                    <a href="#" class="footer-link" onclick="navigate('contact')">CONTACT US</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">FOR PROFESSIONALS</h4>
+                    <a href="#" class="footer-link" onclick="navigate('register')">REGISTER AS A PROFESSIONAL</a>
+                    <a href="#" class="footer-link" onclick="navigate('company')">COMPANY</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-header">SOCIAL LINKS</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" onclick="openSocial('twitter')" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('facebook')" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('instagram')" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" onclick="openSocial('linkedin')" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    
+                    <div class="app-downloads" style="margin-top: 20px;">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" class="app-badge" onclick="downloadApp('ios')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="app-badge" onclick="downloadApp('android')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
